@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dulieu.js">
+    <title>Bán hàng thiết bị điện tử laptop</title>
+</head>
+<body>
+   <header class="header">
+    <div class="container">
+        <div class="logo-and-nav">
+            <a href="#" class="logo">Fresher</a>
+            <nav class="main-nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="#">Phụ kiện</a></li>
+                    <li class="nav-item"><a href="#">Khuyến mãi</a></li>
+                    <li class="nav-item"><a href="#">Hàng mới</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="button">
+          <li class="dangnhap"> <a href="login.html"> Đăng nhập</a> / <a href="#"> Đăng ký</a></li>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+            <button class="search-button">Tìm kiếm</button>
+        </div>
+    </div>
+    <script src="dulieu.js"></script>
+  </header>
+ <!-- Form chat Zalo -->
+    
+   
+<div class="chat-form" id="chat-form">
+        
+       
+  <h3>Chat với tôi qua Zalo</h3>
+          
+         
+  <textarea id="message" placeholder="Nhập tin nhắn của bạn..."></textarea>
+          
+         
+  <button id="sendButton">Gửi</button>
+      </div>
+  
+      <!-- Biểu tượng Zalo để mở form chat -->
+      <div class="chat-icon" id="chat-icon">
+          <!-- Thêm biểu tượng Zalo vào đây -->
+          <a href="javascript:void(0);">
+              <img src="image/th.jpg" alt="Chat Zalo">
+          </a>
+      </div>
+  
+      <script>
+         
+          // JavaScript để xử lý sự kiện click và hiển thị form chat
+          var chatIcon = document.getElementById("chat-icon");
+          var chatForm = document.getElementById("chat-form");
+          var sendButton = document.getElementById("sendButton");
+          var messageInput = document.getElementById("message");
+  
+          chatIcon.addEventListener("click", function() {
+              chatForm.style.display = "block"; // Hiển thị form chat khi bấm vào biểu tượng Zalo
+          });
+  
+          sendButton.addEventListener("click", function() {
+              var message = messageInput.value;
+              // Gửi tin nhắn message lên Zalo tại đây (ví dụ: sử dụng API của Zalo)
+              alert("Đã gửi tin nhắn: " + message);
+              chatForm.style.display = "none"; // Sau khi gửi tin nhắn, ẩn form chat lại
+              messageInput.value = ""; // Xóa nội dung tin nhắn trong ô input
+          });
+      </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #145776;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-and-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.dangnhap {
+  list-style: none; /* Loại bỏ dấu chấm của phần tử li */
+}
+
+.dangnhap a {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dangnhap a + a:before {
+  content: ""; /* Dấu chấm giữa các liên kết */
+  color: #fff;
+}
+
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #df4d18;
+  color: #fff;
+}
+
+/* Thêm các hiệu ứng hover, active nếu muốn */
+
+
+
+        /* CSS cho biểu tượng Zalo */
+        .chat-icon {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 9999;
+      }
+
+      .chat-icon img {
+          width: 50px;
+          height: 50px;
+          /* Thêm các thuộc tính khác của biểu tượng Zalo tại đây (nếu cần) */
+      }
+
+      /* CSS cho khung chat */
+
+      /* CSS cho nút đóng khung chat */
+      .close-button {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          cursor: pointer;
+      }

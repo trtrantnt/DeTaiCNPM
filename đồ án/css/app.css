@@ -1,0 +1,82 @@
+body{
+    background: url('../image/bg_log.jpg');
+    background-size: cover;
+}
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-login{
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.714);
+    flex-grow: 1;
+    padding: 20px 20px 30px ;
+    box-shadow: 0px 0px 15px 1px rgba(255, 255, 255);
+}
+.form-heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+.form-group{
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+}
+.form-input::placeholder{
+    color: #f5f5f5;
+    
+}
+.form-submit{
+    background: transparent;
+    border: 3px solid #706c6cb5;
+    width: 100%;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    padding: 5px 10px;
+}
+.form-submit:hover{
+    border: 2px solid #f5f5f5;
+    background: #f5f5f587;
+}
+
+.forgot-password a{
+    margin: 0px;
+}
+
+.forgot-password a {
+    text-align: left;
+    margin-top: 15px;
+    color: #ffff;
+    font-size: 10px;
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+}
+
+.register a {
+ margin: 0px;
+}
+
+.register {
+    color: yellow ;
+}
+
+.register a {
+    text-align: left;
+    margin-top: 15px;
+    color: #ffff;
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+}
+
+
